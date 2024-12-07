@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGC-GYM Landing Page</title>
+    <!-- Ion Icons Js -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="container flex">
+            <!-- Mobile Button -->
+            <div class="mobile-btn">
+                <ion-icon name="grid"></ion-icon>
+            </div>
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/logo.png" alt="">
+            </div>
+            <ul class="nav">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#why-us">Features</a></li>
+                <li class="nav-item"><a href="#explore">Explore</a></li>
+                <li class="nav-item"><a href="#discount">Register</a></li>
+            </ul>
+            <a href="#" class="btn" id="register-btn">Register</a>
+        </div>
+    </div>
+    <!-- End Menu -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container flex">
+            <div class="text">
+                <h1 class="mb">
+                    Complete Daily <br>
+                    <span>Workout</span> At Home
+                </h1>
+                <p class="mb">
+                    Start your fitness journey with us! Achieve your goals with expert guidance and a supportive community.
+                </p>
+                <a href="#" class="btn mt">Get Started Now</a>
+            </div>
+            <div class="visual">
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/banner-img.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Registration Modal -->
+    <div class="registration-modal" id="register-modal" style="display: none;">
+        <div class="modal-content">
+            <h2 class="primary mb">Register Now</h2>
+            <form action="submit_registration.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="plan">Choose a Plan:</label>
+                <select id="plan" name="plan" required>
+                    <option value="basic">Basic Plan</option>
+                    <option value="standard">Standard Plan</option>
+                    <option value="premium">Premium Plan</option>
+                </select>
+                <button type="submit" class="btn">Register Now</button>
+            </form>
+            <button class="close-modal btn-2">Close</button>
+        </div>
+    </div>
+    <!-- End Registration Modal -->
+
+<!-- Why Us -->
+<div class="section" id="why-us">
+    <div class="container flex">
+        <div class="text">
+            <h2 class="primary mb">Why Choose Us?</h2>
+            <h3 class="secondary mb">Expert Guidance</h3>
+            <p class="tertiary">
+                Get personalized advice from certified fitness experts who are dedicated to helping you achieve your goals.
+            </p>
+
+            <h3 class="secondary mb">Flexible Schedules</h3>
+            <p class="tertiary">
+                We offer a variety of fitness classes at different times, so you can choose what works best for your routine.
+            </p>
+        </div>
+        <div class="visual">
+            <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/why-us.png" alt="Why Choose Us Illustration" />
+        </div>
+    </div>
+</div>
+<!-- End Why Us -->
+
+<!-- Explore -->
+<div class="section" id="explore">
+    <div class="container flex">
+        <div class="visual">
+            <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/explore.jpg" alt="Fitness Studio Image" />
+        </div>
+        <div class="text">
+            <h2 class="primary mb">
+                Explore Our Fitness <br />
+                Studio
+            </h2>
+            <p class="tertiary mb">
+                Discover state-of-the-art equipment, a motivating environment, and a community focused on helping you grow stronger every day.
+            </p>
+            <a href="#" class="btn mt">Get Started Now</a>
+        </div>
+    </div>
+</div>
+<!-- End Explore -->
+
+<!-- Trainer -->
+<div class="section" id="trainer">
+    <h2 class="primary mb">Our Professional Trainers</h2>
+    <div class="container flex">
+        <div class="trainer">
+            <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer1.jpg" alt="Trainer Alan Smith" />
+            <h3 class="secondary mb">Alan Smith</h3>
+            <p class="tertiary mb">
+                Specialized in strength training and bodybuilding, Alan has over 10 years of experience coaching clients to their peak performance.
+            </p>
+            <a href="#" class="btn-2">
+                <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="trainer">
+            <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer2.jpg" alt="Trainer Lisa Adams" />
+            <h3 class="secondary mb">Lisa Adams</h3>
+            <p class="tertiary mb">
+                A yoga and flexibility expert, Lisa ensures every session leaves you feeling relaxed and rejuvenated.
+            </p>
+            <a href="#" class="btn-2">
+                <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="trainer">
+            <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer3.jpg" alt="Trainer Mark Lee" />
+            <h3 class="secondary mb">Mark Lee</h3>
+            <p class="tertiary mb">
+                Focused on endurance and HIIT, Mark's dynamic sessions help you burn calories and build stamina quickly.
+            </p>
+            <a href="#" class="btn-2">
+                <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- End Trainer -->
+
+<!-- Testimonial -->
+<div class="section" id="testimonial">
+    <div class="container flex">
+        <div class="text">
+            <h2 class="primary">
+                That's What Our Super <br />
+                Client Says
+            </h2>
+            <div class="client">
+                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/client1.jpg" alt="Client Feedback" />
+                <h2 class="secondary">Excellent Training</h2>
+                <p class="tertiary">
+                    "Joining PGC-GYM was the best decision I ever made. The trainers are amazing, and the environment is incredibly motivating!"
+                </p>
+            </div>
+        </div>
+        <div class="visual">
+            <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/testimonial.png" alt="Client Testimonial Illustration" />
+        </div>
+    </div>
+</div>
+<!-- End Testimonial -->
+
+<!-- Discount -->
+<div class="section" id="discount">
+    <div class="container flex">
+        <div class="visual">
+            <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/discount.png" alt="Discount Offer" />
+        </div>
+        <div class="text">
+            <h2 class="primary mb">
+                Fitness Classes This Summer, Pay Now And Get 25% Discount
+            </h2>
+            <p class="tertiary mb">
+                Sign up for our summer fitness classes today and enjoy a 25% discount. Offer valid for a limited time!
+            </p>
+            <a href="#" class="btn bt">Book Now</a>
+        </div>
+    </div>
+</div>
+<!-- End Discount -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container flex">
+            <p class="tertiary">
+                &copy; 2024 Malak J Bhadgaonkar. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+        // Show the modal when the "Register" button is clicked
+        document.querySelectorAll(".btn").forEach((btn) => {
+            btn.addEventListener("click", function (e) {
+                const modal = document.getElementById("register-modal");
+                if (modal) modal.style.display = "flex";
+            });
+        });
+    
+        // Close the modal when the "Close" button is clicked
+        document.querySelector(".close-modal").addEventListener("click", function () {
+            const modal = document.getElementById("register-modal");
+            if (modal) modal.style.display = "none";
+        });
+    
+        // Close the modal when clicking outside of it
+        window.addEventListener("click", function (e) {
+            const modal = document.getElementById("register-modal");
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>
